@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="container__title">Contact Book</h1>
+      <form id="contact__form">
+        <input type="text" class="input-name" placeholder="Enter Name" />
+        <input type="text" class="input-surname" placeholder="Enter Surname" />
+        <input type="email" class="input-email" placeholder="Enter Email" />
+        <input
+          type="tel"
+          class="input-telephone"
+          placeholder="Enter Telephone"
+        />
+        <button class="btn btn-success">Add Contact</button>
+      </form>
+    </div>
+
+    <div class="contacts-list">
+      <h2 class="contacts__title">Contacts</h2>
+      <ul id="contacts"></ul>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+      integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
